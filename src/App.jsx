@@ -4,7 +4,6 @@ function App() {
   return (
     <>
       <main>
-        <div></div>
         <div className="logo">
           <h1>白金瑪麗</h1>
         </div>

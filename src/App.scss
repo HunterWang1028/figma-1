@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Zen+Kurenaido&family=Roboto:wght@400&display=swap");
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
-
 $font-primary: "Roboto", sans-serif;
 $font-logo: "Zen Kurenaido", sans-serif;
+$color-primary: #2a2b23;
+$shadow-black: 5px 5px 0px 0px black;
+$shadow-white: 5px 5px 0px 0px white;
 
 * {
   box-sizing: border-box;
@@ -12,8 +13,9 @@ $font-logo: "Zen Kurenaido", sans-serif;
 }
 
 body {
-  background-image: url(/public/Background.png);
   font-family: $font-primary;
+  background-image: url(/public/Background.png);
+  background-size: cover;
 }
 
 main {
@@ -25,8 +27,9 @@ main {
   gap: 2dvh;
   margin-top: 10dvh;
 }
+
 .logo {
-  background: #22251d;
+  background: $color-primary;
   font-family: $font-logo;
   width: 40dvw;
   aspect-ratio: 2.5;
@@ -35,6 +38,7 @@ main {
   align-items: center;
   justify-content: center;
 }
+
 h1 {
   color: white;
   font-size: 7dvw;
@@ -43,7 +47,7 @@ h1 {
 }
 
 h2 {
-  color: #000;
+  color: black;
   font-size: 5dvw;
   font-weight: bold;
   margin-top: 3dvh;
@@ -51,7 +55,7 @@ h2 {
 }
 
 p {
-  color: #000;
+  color: black;
   font-size: 5dvw;
   font-weight: normal;
 }
@@ -60,19 +64,20 @@ button {
   font-weight: normal;
   text-align: center;
 }
+
 .main-btn {
   display: flex;
   width: 100%;
   justify-content: center;
   position: absolute;
-  bottom: 26%;
+  bottom: 28%;
 }
 
 .btn1 {
   width: 80dvw;
   aspect-ratio: 7;
   transform: rotate(-2.18deg);
-  box-shadow: 5px 5px 0px 0px #000000;
+  box-shadow: $shadow-black;
 }
 
 .three-btn {
@@ -86,23 +91,23 @@ button {
 .btn2 {
   width: 34dvw;
   aspect-ratio: 2.5;
-  background: #2a2b23;
+  background: $color-primary;
   color: white;
-  box-shadow: 5px 5px 0px 0px #ffffff;
+  box-shadow: $shadow-white;
   transform: rotate(6.24deg);
 }
 
 .btn3 {
   width: 28dvw;
-  box-shadow: 5px 5px 0px 0px #000000;
+  box-shadow: 5px 5px 0px 0px black;
 }
 
 .btn4 {
-  background: #2a2b23;
+  background: $color-primary;
   color: white;
   width: 28dvw;
   transform: rotate(-8.21deg);
-  box-shadow: 5px 5px 0px 0px #ffffff;
+  box-shadow: $shadow-white;
 }
 
 .footer {
@@ -110,4 +115,8 @@ button {
   bottom: 0;
   width: 100%;
   max-height: 12dvh;
+  img {
+    width: 100%;
+    height: auto;
+  }
 }
