@@ -5,6 +5,7 @@ $font-logo: "Zen Kurenaido", sans-serif;
 $color-primary: #2a2b23;
 $shadow-black: 5px 5px 0px 0px black;
 $shadow-white: 5px 5px 0px 0px white;
+$btn-hover-color: #3d4a3f;
 
 * {
   box-sizing: border-box;
@@ -59,10 +60,20 @@ p {
   font-size: 5dvw;
   font-weight: normal;
 }
+
 button {
   font-size: 5dvw;
   font-weight: normal;
   text-align: center;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+
+  &:hover {
+    color: white;
+    background-color: $btn-hover-color;
+    transform: scale(1.1);
+    z-index: 50;
+  }
 }
 
 .main-btn {
