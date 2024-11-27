@@ -1,8 +1,8 @@
 **Cloning the Repository**
 
 ```bash
-git clone 
-cd 
+git clone https://github.com/HunterWang1028/figma-1.git
+cd figma-1
 ```
 
 **Installation**
