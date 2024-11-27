@@ -7,8 +7,6 @@ cd figma-1
 
 **Installation**
 
-Install the project dependencies using npm:
-
 ```bash
 npm install
 ```
